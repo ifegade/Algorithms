@@ -25,25 +25,25 @@ namespace Algorithm
             if (s.Length <= 1)
                 return false;
 
-            HashSet<Char> open = new HashSet<char>();
-            open.Add('[');
-            open.Add('(');
-            open.Add('{');
+            Dictionary<Char, Char> open = new Dictionary<Char, Char>();
+            open.Add('[',']');
+            open.Add('(',')');
+            open.Add('{','}');
 
             Stack<char> braces = new Stack<char>();
             
             for(int i = 0; i < s.Length; i++)
             {
-                if (open.Contains(s[i]))
+                if (open.ContainsKey(s[i]))
                 {
                     braces.Push(s[i]);
                     continue;
                 }
                 if (braces.Count == 0)
                     return false;
-                Char last = braces.Pop();
+                
 
-                if((s[i] == ']' && last != '[') || (s[i] == '}' && last != '{') || (s[i] == ')' && last != '('))
+                if(open.ContainsKey(s[i]) && s[i]  == open[s[i]])
                 {
                    return false;
                 }            
