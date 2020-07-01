@@ -6,10 +6,11 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            ReverseString a = new ReverseString();
+            ValidParentheses a = new ValidParentheses();
+           // ReverseString a = new ReverseString();
            // StringToIntegerAtoi s = new StringToIntegerAtoi();
-            //   TwoNumbers a = new TwoNumbers();
-            // ValidPalindrome a = new ValidPalindrome();
+           //   TwoNumbers a = new TwoNumbers();
+           // ValidPalindrome a = new ValidPalindrome();
             Console.ReadLine();
         }
     }
