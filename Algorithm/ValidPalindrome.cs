@@ -21,7 +21,6 @@ namespace Algorithm
                 if (Char.IsLetterOrDigit(s[i]))
                     builder.Append(s[i]);
             }
-
             return builder.ToString().ToLower() == getReversedInput(builder.ToString()).ToLower();
 
         }

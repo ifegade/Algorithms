@@ -8,7 +8,7 @@ namespace Algorithm
     {
         public ValidParentheses()
         {
-            
+            Console.WriteLine(IsValid("()"));
             Console.WriteLine(IsValid("){"));
             Console.WriteLine(IsValid("(("));
             Console.WriteLine(IsValid("([)]"));
@@ -41,12 +41,13 @@ namespace Algorithm
                 }
                 if (braces.Count == 0)
                     return false;
-                
 
-                if(open.ContainsKey(s[i]) && s[i]  == open[s[i]])
+                Char last = braces.Pop();
+
+                if (open.ContainsKey(last) && open[last] != s[i])
                 {
-                   return false;
-                }            
+                        return false;
+                }           
             }
             return braces.Count == 0;
         }

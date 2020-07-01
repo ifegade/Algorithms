@@ -6,7 +6,7 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            ValidParentheses a = new ValidParentheses();
+            TrappingRainWater a = new TrappingRainWater();
            // ReverseString a = new ReverseString();
            // StringToIntegerAtoi s = new StringToIntegerAtoi();
            //   TwoNumbers a = new TwoNumbers();
