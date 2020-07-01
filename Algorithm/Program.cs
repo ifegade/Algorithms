@@ -6,7 +6,8 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            StringToIntegerAtoi s = new StringToIntegerAtoi();
+            ReverseString a = new ReverseString();
+           // StringToIntegerAtoi s = new StringToIntegerAtoi();
             //   TwoNumbers a = new TwoNumbers();
             // ValidPalindrome a = new ValidPalindrome();
             Console.ReadLine();
