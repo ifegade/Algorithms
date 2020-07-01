@@ -6,7 +6,7 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            TrappingRainWater a = new TrappingRainWater();
+            ArrangeCoin a = new ArrangeCoin();
            // ReverseString a = new ReverseString();
            // StringToIntegerAtoi s = new StringToIntegerAtoi();
            //   TwoNumbers a = new TwoNumbers();
