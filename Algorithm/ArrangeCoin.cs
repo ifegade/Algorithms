@@ -34,7 +34,12 @@ namespace Algorithm
 
             return (int)right;
         }
+        private int UsingMath(int n)
+        {
+            //complexity is constant
+            return (int)(Math.Sqrt(2 * (long)n + 0.25) - 0.5);
 
+        }
         private int completeStep(int n)
         {
             int levelCounter = 0;
@@ -52,8 +57,7 @@ namespace Algorithm
 
             return levelCounter;
 
-            //will fail for large numbers
-            // return (int)(Math.sqrt(2 * (long)n + 0.25) - 0.5);
+
 
 
             //not efficient enough
